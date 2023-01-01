@@ -51,10 +51,12 @@
         <meta charset="UTF-8">
         <title>Bus Reservations | Reset Password</title>
         <?php require_once(__DIR__ . '/templates/dependencies.php'); ?>
+        <link rel="stylesheet" href="../resources/css/password_reset_validation.css">
     </head>
     <body>
         <?php require_once(__DIR__ . '/templates/navigation.php'); ?>
         <h2>Reset Password</h2>
+        <div id="message"></div>
         <form action="reset-password.php" method="post" id="reset-form">
             <div class="form-group">
                 <label for="password">Password: </label>
@@ -71,5 +73,6 @@
                 <button type="reset" class="btn btn-secondary">Reset</button>
             </div>
         </form>
+        <script src="../resources/js/password_reset_validation.js" type="application/javascript"></script>
     </body>
 </html>
